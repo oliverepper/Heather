@@ -8,9 +8,28 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var workoutManager = WorkoutManager()
+
     var body: some View {
-        Text("Hello, World!")
-            .padding()
+        VStack {
+            Text("Elapsed: \(workoutManager.elapsedTime)")
+            Text("HR: \(workoutManager.heartRate)")
+            Button {
+                workoutManager.startWorkout()
+            }
+            label: {
+                Text("Starte Workout")
+            }
+            Button {
+                workoutManager.endWorkout()
+            }
+            label: {
+                Text("Beende Workout")
+            }
+        }
+        .onAppear {
+            workoutManager.requestAuthorization()
+        }
     }
 }
 

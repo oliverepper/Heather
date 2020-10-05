@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  Heather
 //
-//  Created by Oliver Epper on 05.10.20.
+//  Created by Oliver Epper on 05.10.20. 
 //
 
 import SwiftUI
