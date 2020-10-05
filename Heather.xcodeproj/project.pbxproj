@@ -1,0 +1,634 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A77ADCFB252B68E800048697 /* HeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77ADCFA252B68E800048697 /* HeatherApp.swift */; };
+		A77ADCFD252B68E800048697 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77ADCFC252B68E800048697 /* ContentView.swift */; };
+		A77ADCFF252B68E900048697 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A77ADCFE252B68E900048697 /* Assets.xcassets */; };
+		A77ADD02252B68E900048697 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A77ADD01252B68E900048697 /* Preview Assets.xcassets */; };
+		A77ADD07252B68E900048697 /* Heather WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A77ADD06252B68E900048697 /* Heather WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A77ADD0C252B68E900048697 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A77ADD0B252B68E900048697 /* Assets.xcassets */; };
+		A77ADD13252B68E900048697 /* Heather WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A77ADD12252B68E900048697 /* Heather WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A77ADD18252B68E900048697 /* HeatherApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77ADD17252B68E900048697 /* HeatherApp.swift */; };
+		A77ADD1A252B68E900048697 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77ADD19252B68E900048697 /* ContentView.swift */; };
+		A77ADD1C252B68E900048697 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77ADD1B252B68E900048697 /* NotificationController.swift */; };
+		A77ADD1E252B68E900048697 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77ADD1D252B68E900048697 /* NotificationView.swift */; };
+		A77ADD20252B68E900048697 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77ADD1F252B68E900048697 /* ComplicationController.swift */; };
+		A77ADD22252B68EA00048697 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A77ADD21252B68EA00048697 /* Assets.xcassets */; };
+		A77ADD25252B68EA00048697 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A77ADD24252B68EA00048697 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A77ADD08252B68E900048697 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A77ADCEF252B68E800048697 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A77ADD05252B68E900048697;
+			remoteInfo = "Heather WatchKit App";
+		};
+		A77ADD14252B68E900048697 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A77ADCEF252B68E800048697 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A77ADD11252B68E900048697;
+			remoteInfo = "Heather WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A77ADD2D252B68EA00048697 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A77ADD13252B68E900048697 /* Heather WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A77ADD31252B68EA00048697 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A77ADD07252B68E900048697 /* Heather WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A77ADCF7252B68E800048697 /* Heather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Heather.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A77ADCFA252B68E800048697 /* HeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeatherApp.swift; sourceTree = "<group>"; };
+		A77ADCFC252B68E800048697 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A77ADCFE252B68E900048697 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A77ADD01252B68E900048697 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A77ADD03252B68E900048697 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A77ADD06252B68E900048697 /* Heather WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Heather WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A77ADD0B252B68E900048697 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A77ADD0D252B68E900048697 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A77ADD12252B68E900048697 /* Heather WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Heather WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A77ADD17252B68E900048697 /* HeatherApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeatherApp.swift; sourceTree = "<group>"; };
+		A77ADD19252B68E900048697 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A77ADD1B252B68E900048697 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		A77ADD1D252B68E900048697 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		A77ADD1F252B68E900048697 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		A77ADD21252B68EA00048697 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A77ADD24252B68EA00048697 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A77ADD26252B68EA00048697 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A77ADD27252B68EA00048697 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A77ADCF4252B68E800048697 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A77ADD0F252B68E900048697 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A77ADCEE252B68E800048697 = {
+			isa = PBXGroup;
+			children = (
+				A77ADCF9252B68E800048697 /* Heather */,
+				A77ADD0A252B68E900048697 /* Heather WatchKit App */,
+				A77ADD16252B68E900048697 /* Heather WatchKit Extension */,
+				A77ADCF8252B68E800048697 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A77ADCF8252B68E800048697 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A77ADCF7252B68E800048697 /* Heather.app */,
+				A77ADD06252B68E900048697 /* Heather WatchKit App.app */,
+				A77ADD12252B68E900048697 /* Heather WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A77ADCF9252B68E800048697 /* Heather */ = {
+			isa = PBXGroup;
+			children = (
+				A77ADCFA252B68E800048697 /* HeatherApp.swift */,
+				A77ADCFC252B68E800048697 /* ContentView.swift */,
+				A77ADCFE252B68E900048697 /* Assets.xcassets */,
+				A77ADD03252B68E900048697 /* Info.plist */,
+				A77ADD00252B68E900048697 /* Preview Content */,
+			);
+			path = Heather;
+			sourceTree = "<group>";
+		};
+		A77ADD00252B68E900048697 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A77ADD01252B68E900048697 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A77ADD0A252B68E900048697 /* Heather WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				A77ADD0B252B68E900048697 /* Assets.xcassets */,
+				A77ADD0D252B68E900048697 /* Info.plist */,
+			);
+			path = "Heather WatchKit App";
+			sourceTree = "<group>";
+		};
+		A77ADD16252B68E900048697 /* Heather WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A77ADD17252B68E900048697 /* HeatherApp.swift */,
+				A77ADD19252B68E900048697 /* ContentView.swift */,
+				A77ADD1B252B68E900048697 /* NotificationController.swift */,
+				A77ADD1D252B68E900048697 /* NotificationView.swift */,
+				A77ADD1F252B68E900048697 /* ComplicationController.swift */,
+				A77ADD21252B68EA00048697 /* Assets.xcassets */,
+				A77ADD26252B68EA00048697 /* Info.plist */,
+				A77ADD27252B68EA00048697 /* PushNotificationPayload.apns */,
+				A77ADD23252B68EA00048697 /* Preview Content */,
+			);
+			path = "Heather WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		A77ADD23252B68EA00048697 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A77ADD24252B68EA00048697 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A77ADCF6252B68E800048697 /* Heather */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A77ADD32252B68EA00048697 /* Build configuration list for PBXNativeTarget "Heather" */;
+			buildPhases = (
+				A77ADCF3252B68E800048697 /* Sources */,
+				A77ADCF4252B68E800048697 /* Frameworks */,
+				A77ADCF5252B68E800048697 /* Resources */,
+				A77ADD31252B68EA00048697 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A77ADD09252B68E900048697 /* PBXTargetDependency */,
+			);
+			name = Heather;
+			productName = Heather;
+			productReference = A77ADCF7252B68E800048697 /* Heather.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A77ADD05252B68E900048697 /* Heather WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A77ADD2E252B68EA00048697 /* Build configuration list for PBXNativeTarget "Heather WatchKit App" */;
+			buildPhases = (
+				A77ADD04252B68E900048697 /* Resources */,
+				A77ADD2D252B68EA00048697 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A77ADD15252B68E900048697 /* PBXTargetDependency */,
+			);
+			name = "Heather WatchKit App";
+			productName = "Heather WatchKit App";
+			productReference = A77ADD06252B68E900048697 /* Heather WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		A77ADD11252B68E900048697 /* Heather WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A77ADD2A252B68EA00048697 /* Build configuration list for PBXNativeTarget "Heather WatchKit Extension" */;
+			buildPhases = (
+				A77ADD0E252B68E900048697 /* Sources */,
+				A77ADD0F252B68E900048697 /* Frameworks */,
+				A77ADD10252B68E900048697 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Heather WatchKit Extension";
+			productName = "Heather WatchKit Extension";
+			productReference = A77ADD12252B68E900048697 /* Heather WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A77ADCEF252B68E800048697 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					A77ADCF6252B68E800048697 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					A77ADD05252B68E900048697 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					A77ADD11252B68E900048697 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+				};
+			};
+			buildConfigurationList = A77ADCF2252B68E800048697 /* Build configuration list for PBXProject "Heather" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A77ADCEE252B68E800048697;
+			productRefGroup = A77ADCF8252B68E800048697 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A77ADCF6252B68E800048697 /* Heather */,
+				A77ADD05252B68E900048697 /* Heather WatchKit App */,
+				A77ADD11252B68E900048697 /* Heather WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A77ADCF5252B68E800048697 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A77ADD02252B68E900048697 /* Preview Assets.xcassets in Resources */,
+				A77ADCFF252B68E900048697 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A77ADD04252B68E900048697 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A77ADD0C252B68E900048697 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A77ADD10252B68E900048697 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A77ADD25252B68EA00048697 /* Preview Assets.xcassets in Resources */,
+				A77ADD22252B68EA00048697 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A77ADCF3252B68E800048697 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A77ADCFD252B68E800048697 /* ContentView.swift in Sources */,
+				A77ADCFB252B68E800048697 /* HeatherApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A77ADD0E252B68E900048697 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A77ADD1C252B68E900048697 /* NotificationController.swift in Sources */,
+				A77ADD1A252B68E900048697 /* ContentView.swift in Sources */,
+				A77ADD20252B68E900048697 /* ComplicationController.swift in Sources */,
+				A77ADD18252B68E900048697 /* HeatherApp.swift in Sources */,
+				A77ADD1E252B68E900048697 /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A77ADD09252B68E900048697 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A77ADD05252B68E900048697 /* Heather WatchKit App */;
+			targetProxy = A77ADD08252B68E900048697 /* PBXContainerItemProxy */;
+		};
+		A77ADD15252B68E900048697 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A77ADD11252B68E900048697 /* Heather WatchKit Extension */;
+			targetProxy = A77ADD14252B68E900048697 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A77ADD28252B68EA00048697 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A77ADD29252B68EA00048697 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		A77ADD2B252B68EA00048697 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Heather WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = AWJ83G3EPY;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Heather WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.oliver-epper.Heather.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		A77ADD2C252B68EA00048697 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Heather WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = AWJ83G3EPY;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Heather WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.oliver-epper.Heather.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
+		A77ADD2F252B68EA00048697 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AWJ83G3EPY;
+				IBSC_MODULE = Heather_WatchKit_Extension;
+				INFOPLIST_FILE = "Heather WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.oliver-epper.Heather.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		A77ADD30252B68EA00048697 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AWJ83G3EPY;
+				IBSC_MODULE = Heather_WatchKit_Extension;
+				INFOPLIST_FILE = "Heather WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "de.oliver-epper.Heather.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
+		A77ADD33252B68EA00048697 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Heather/Preview Content\"";
+				DEVELOPMENT_TEAM = AWJ83G3EPY;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Heather/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.oliver-epper.Heather";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A77ADD34252B68EA00048697 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Heather/Preview Content\"";
+				DEVELOPMENT_TEAM = AWJ83G3EPY;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Heather/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "de.oliver-epper.Heather";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A77ADCF2252B68E800048697 /* Build configuration list for PBXProject "Heather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A77ADD28252B68EA00048697 /* Debug */,
+				A77ADD29252B68EA00048697 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A77ADD2A252B68EA00048697 /* Build configuration list for PBXNativeTarget "Heather WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A77ADD2B252B68EA00048697 /* Debug */,
+				A77ADD2C252B68EA00048697 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A77ADD2E252B68EA00048697 /* Build configuration list for PBXNativeTarget "Heather WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A77ADD2F252B68EA00048697 /* Debug */,
+				A77ADD30252B68EA00048697 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A77ADD32252B68EA00048697 /* Build configuration list for PBXNativeTarget "Heather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A77ADD33252B68EA00048697 /* Debug */,
+				A77ADD34252B68EA00048697 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A77ADCEF252B68E800048697 /* Project object */;
+}
