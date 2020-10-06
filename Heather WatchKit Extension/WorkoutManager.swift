@@ -14,10 +14,11 @@ final class WorkoutManager: NSObject, ObservableObject {
     @Published var heartRate = 0
     @Published var elapsedSeconds = 0
     @Published var elapsedTime = ""
+    @Published var isRunning: Bool? = nil
 
     private let healthStore = HKHealthStore()
-    private var session: HKWorkoutSession!
-    private var builder: HKLiveWorkoutBuilder!
+    private var session: HKWorkoutSession?
+    private var builder: HKLiveWorkoutBuilder?
     private var cancellables = Set<AnyCancellable>()
 
     // Timer
@@ -64,21 +65,22 @@ final class WorkoutManager: NSObject, ObservableObject {
 
     func startWorkout() {
         os_log("Starting workout")
+        isRunning = true
         setupTimer()
         do {
             session = try HKWorkoutSession(healthStore: healthStore, configuration: configuration)
-            builder = session.associatedWorkoutBuilder()
+            builder = session?.associatedWorkoutBuilder()
         } catch {
             os_log("%@", error.localizedDescription)
         }
 
-        session.delegate = self
-        builder.delegate = self
+        session?.delegate = self
+        builder?.delegate = self
 
-        builder.dataSource = HKLiveWorkoutDataSource(healthStore: healthStore, workoutConfiguration: configuration)
+        builder?.dataSource = HKLiveWorkoutDataSource(healthStore: healthStore, workoutConfiguration: configuration)
 
-        session.startActivity(with: Date())
-        builder.beginCollection(withStart: Date()) { (success, error) in
+        session?.startActivity(with: Date())
+        builder?.beginCollection(withStart: Date()) { (success, error) in
             if let e = error {
                 os_log("%@", e.localizedDescription)
             }
@@ -87,7 +89,8 @@ final class WorkoutManager: NSObject, ObservableObject {
 
     func pauseWorkout() {
         os_log("Pause workout")
-        session.pause()
+        isRunning = false
+        session?.pause()
         cancellables.forEach { cancellable in
             cancellable.cancel()
         }
@@ -96,16 +99,20 @@ final class WorkoutManager: NSObject, ObservableObject {
 
     func resumeWorkout() {
         os_log("Resume workout")
+        isRunning = true
         setupTimer()
-        session.resume()
+        session?.resume()
     }
     
     func endWorkout() {
         os_log("End workout")
-        session.end()
-        cancellables.forEach { cancellable in
-            cancellable.cancel()
+        if let _ = isRunning {
+            session?.end()
+            cancellables.forEach { cancellable in
+                cancellable.cancel()
+            }
         }
+        isRunning = nil
     }
 
     func update(_ stats: HKStatistics?) {
@@ -135,6 +142,14 @@ final class WorkoutManager: NSObject, ObservableObject {
         let runningTime = Int(-1 * self.start.timeIntervalSinceNow)
         return self.accumulatedTime + runningTime
     }
+
+    private func resetWorkout() {
+        DispatchQueue.main.async {
+            self.elapsedTime = ""
+            self.elapsedSeconds = 0
+            self.heartRate = 0
+        }
+    }
 }
 
 
@@ -151,6 +166,11 @@ extension WorkoutManager: HKWorkoutSessionDelegate {
             os_log("Paused")
         case .ended:
             os_log("Ended")
+            builder?.endCollection(withEnd: Date()) { (success, error) in
+                self.builder?.finishWorkout { (workout, error) in
+                    self.resetWorkout()
+                }
+            }
         case .stopped:
             os_log("Stopped")
         default:

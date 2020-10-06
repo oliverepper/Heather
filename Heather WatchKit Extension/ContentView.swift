@@ -14,17 +14,26 @@ struct ContentView: View {
         VStack {
             Text("Elapsed: \(workoutManager.elapsedTime)")
             Text("HR: \(workoutManager.heartRate)")
-            Button {
-                workoutManager.startWorkout()
-            }
-            label: {
-                Text("Starte Workout")
+            if workoutManager.isRunning != nil {
+                Button {
+                    workoutManager.isRunning! ? workoutManager.pauseWorkout() : workoutManager.resumeWorkout()
+                }
+                label: {
+                    workoutManager.isRunning! ? Text("Pause") : Text("Fortsetzen")
+                }
+            } else {
+                Button {
+                    workoutManager.startWorkout()
+                }
+                label: {
+                    Text("Start")
+                }
             }
             Button {
                 workoutManager.endWorkout()
             }
             label: {
-                Text("Beende Workout")
+                Text("Stop")
             }
         }
         .onAppear {
